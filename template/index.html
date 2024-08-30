@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox  Interface</title>
+    <link rel="stylesheet" href="template/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Sandbox </h2>
+        </div>
+        <div id="chat-window" class="chat-window">
+            <div class="chat-bubble bot">Welcome! Ask me anything.</div>
+        </div>
+        <form id="chat-form" onsubmit="sendMessage(); return false;">
+            <div class="user-input-container">
+                <input type="text" id="user-input" class="user-input" placeholder="Type your question here...">
+                <button type="submit" class="send-btn">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="template/app.js"></script>
+</body>
+</html>
